@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>cssform</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Student Registeration Form</h1>
+    <hr>
+    <form>
+       <table> <label for="fname">Firstname</label><br/>
+        <input type="text" id="fname" required="required"/></table>
+      <table>  <label for="mname">Middlename</label><br/>
+        <input type="text" id="fname" required="required" name="Middlename"/></table>
+        <table>
+            <lable for="lname">Lastname</lable><br/>
+            <input type="text" id="lname" name="Lastname" required />
+        </table>
+        <table>
+            <label>Course:</label>
+            <select name="course">
+                <option value="Course">Course</option>
+                <option value="Html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+
+            </select>
+            <p>Gender:
+            <input type="radio" id="male" value="Male"/> Male 
+            <input type="radio" id="female" value="Female"/> Female 
+            <input type="radio" id="other" value="Other"/> Other
+            </p>
+            
+        </table>
+        <table>
+            <lable for="phone">Phone:</lable><br>
+            <input type="number" id="phone" name="phone" value="+91"><br><br>
+            <input type="number" id="re-phone">
+        </table>
+        <table>
+            <lable>Current Address:</lable><br>
+            <textarea name="current address" cols="204" rows="6">Current Address</textarea>
+        </table>
+        <table>
+            <lable for="email">Email:</lable><br>
+            <input type="email" id="email" name="email" required="required">
+        </table>
+        <table class="pasw">Password:<br>
+        <input type="password" id="pwd" name="password" pattern="(?=.\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br><br>
+        <input type="password" id="re-pwd" name="repassword" pattern="(?=.\d)(?=.*[a-z])(?=.*[A-Z]).{8,}
+        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+        </table>
+        <button>Register</button>
+    </form>
+    
+</body>
+</html>

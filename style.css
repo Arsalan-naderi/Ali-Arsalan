@@ -1,0 +1,21 @@
+body{
+    font-size: medium;
+    width: 100%;
+    background-color: rgb(127, 221, 221);
+    margin: 10px 20px;
+    padding: 20px 10px;
+}
+h1{
+    text-align: center;
+}
+#fname, #lname,#mname, #phone, #re-phone, #pwd, #re-pwd{
+    padding: 10px 80% 5px 0px;
+    
+}
+
+button{
+    margin: 10px 0px;
+    padding: 10px 40%;
+    background-color: rgb(99, 194, 99);
+    border: green;
+}
